@@ -1,3 +1,16 @@
+const cacheName = 'cache-v1';
+const resourcesToPrecache = [
+    '/',
+    'index.html',
+    'to-do-list-icon.png',
+    'css/all.css',
+    'bootstrap.min.css',
+    'main.css',
+    'js/app.js',
+    'js/bootstrap.bundle.min.js',
+    'js/jquery-3.3.1.min.js',
+];
+
 self.addEventListener('install', event => {
     console.log("Service worker install event!");
     event.waitUntil(
@@ -20,16 +33,3 @@ self.addEventListener('fetch', event => {
     );
     //console.log("Fetch intercepted for: ", event.request.url);
 });
-
-const cacheName = 'cache-v1';
-const resourcesToPrecache = [
-    '/',
-    'index.html',
-    'to-do-list-icon.png',
-    'css/all.css',
-    'bootstrap.min.css',
-    'main.css',
-    'js/app.js',
-    'js/bootstrap.bundle.min.js',
-    'js/jquery-3.3.1.min.js',
-];
