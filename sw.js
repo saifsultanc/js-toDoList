@@ -54,10 +54,11 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
             // to reset after the user choice has been processed
             deferredPrompt = null;
-    })
+        });
+    });
 });
   
-// for analytics
-// window.addEventListener('appinstalled', (evt) => {
-//     app.logEvent('a2hs', 'installed');
-// });
+for analytics
+window.addEventListener('appinstalled', (evt) => {
+    app.logEvent('a2hs', 'installed');
+});
