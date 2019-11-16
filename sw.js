@@ -25,6 +25,7 @@ const cacheName = 'cache-v1';
 const resourcesToPrecache = [
     '/',
     'index.html',
+    'to-do-list-icon.png',
     'css/all.css',
     'bootstrap.min.css',
     'main.css',
