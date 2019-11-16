@@ -58,6 +58,6 @@ window.addEventListener('beforeinstallprompt', (e) => {
 });
   
 // for analytics
-window.addEventListener('appinstalled', (evt) => {
-    app.logEvent('a2hs', 'installed');
-});
+// window.addEventListener('appinstalled', (evt) => {
+//     app.logEvent('a2hs', 'installed');
+// });
