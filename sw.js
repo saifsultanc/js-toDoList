@@ -54,7 +54,7 @@ btnAdd.addEventListener('click', (e) => {
         
         // to reset after the user choice has been processed
         deferredPrompt = null;
-    }
+    })
 });
   
 // for analytics
