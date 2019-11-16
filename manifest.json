@@ -3,7 +3,7 @@
 	"lang" : "en",
 	"name" : "ToDo List",
 	"scope" : "/",
-	"display" : "browser",
+	"display" : "standalone",
 	"start_url" : "https://js-todo.netlify.com/",
 	"short_name" : "To Do List",
 	"theme_color" : "transparent",
