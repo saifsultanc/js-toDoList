@@ -35,6 +35,7 @@ self.addEventListener('fetch', event => {
 });
 
 let deferredPrompt;
+let window = self;
 window.addEventListener('beforeinstallprompt', (e) => {
     // Prevent Chrome 67 and earlier automatically showing the prompt
     e.preventDefault();
