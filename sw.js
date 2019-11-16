@@ -43,18 +43,17 @@ window.addEventListener('beforeinstallprompt', (e) => {
     deferredPrompt = e;
     // Update UI notify the user they can add to home screen
     btnAdd.style.display = 'block';
-});
 
-btnAdd.addEventListener('click', (e) => {
-    deferredPrompt.prompt();
-    deferredPrompt.userChoice.then((choiceResult) => {
-        // condition below is optional for analytics
-        if (choiceResult.outcome === 'accepted') {
-            console.log('User accepted the A2HS prompt');
-        }
-        
-        // to reset after the user choice has been processed
-        deferredPrompt = null;
+    btnAdd.addEventListener('click', (e) => {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((choiceResult) => {
+            // condition below is optional for analytics
+            if (choiceResult.outcome === 'accepted') {
+                console.log('User accepted the A2HS prompt');
+            }
+
+            // to reset after the user choice has been processed
+            deferredPrompt = null;
     })
 });
   
